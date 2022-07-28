@@ -1,0 +1,150 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url('wallpaperbetter.com_2560x1080.jpg');
+ }
+
+.container {
+  padding: 0 40px;
+  margin-left: 80px;
+  color: white;
+  
+  
+}
+
+
+
+h1 {
+  font-size: 2em;
+  
+}
+
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0;
+}
+
+button {
+	background: rgba(255, 145, 0, 0.788);
+	cursor: pointer;
+	
+  }
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #ff9100;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+.banner {
+	height:100px;
+	position: left;
+	text-align: center;
+}
+
+.networks {
+	display: inline-block;
+	position: relative;
+	left: -45%;
+ }
+
+.networks-outer {
+	display: table;
+	position: relative;
+	width: 5em;
+	height: 5em;
+	border: 2px solid rgba(255, 255, 255, 0.541);
+	border-radius: 2em;
+	transition: background-color 0.2s ease-in-out;
+  
+}
+
+.networks-outer a {
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(255, 125, 3, 0.918);
+  
+}
+
+.fa:before {
+	font-size: 40px;
+  
+}
+
+.networks:hover .networks-outer {
+	background: rgba(255, 145, 0, 0.788);
+	cursor: pointer;
+}
+
+/**** Social-Network-Specific ****/
+
+.networks:hover .fa-telegram {
+  color: rgb(46, 50, 255);
+	}
+
+#telegram.networks-outer:hover {
+	border-color: rgb(32, 103, 255);
+	}
+
+.networks:hover .fa-github {
+	color: rgb(0, 0, 0);
+}
+
+#github.networks-outer:hover {
+	border-color: rgb(0, 0, 0);
+}
+
+
+.networks:hover .fa-user {
+	animation: multicolor 4s linear 0s infinite alternate;
+	color: #db3236;
+}
+
+#gmail.networks-outer:hover {
+	animation: multicolorBorder 4s linear 0s infinite alternate;
+	border-color: #db3236;
+}
+
+@keyframes multicolor {
+	0% {
+		color: rgb(255, 125, 3);
+	}
+	33% {
+		color: #3cba54;
+	}
+	66% {
+		color: #f4c20d;
+	}
+	100% {
+		color: #4885ed;
+	}
+}
+
+@keyframes multicolorBorder {
+	0% {
+		border-color: rgb(255, 125, 3);
+	}
+	33% {
+		border-color: #3cba54;
+	}
+	66% {
+		border-color: #f4c20d;
+	}
+	100% {
+		border-color: #4885ed;
+	}
+}
